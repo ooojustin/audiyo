@@ -1,8 +1,18 @@
 # audiyo
 
+[![Crates.io Version](https://img.shields.io/crates/v/audiyo?style=for-the-badge&color=%23006CFF)](https://crates.io/crates/audiyo)
+
 Open source command line utility to adjust volume, sample rate, channels, and bitrate of audio/video files.
 
 Written in Rust, and uses [FFmpeg](https://www.ffmpeg.org/) behind the scenes.
+
+## Installation
+
+Install using cargo:
+
+```bash
+cargo install audiyo
+```
 
 ## Usage
 
