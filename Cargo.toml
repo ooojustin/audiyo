@@ -1,6 +1,14 @@
 [package]
 name = "audiyo"
-version = "0.1.0"
+version = "0.2.0"
+authors = ["Justin Garofolo <justin@garofolo.net>"]
+categories = ["command-line-utilities","multimedia::audio","multimedia::video"]
+keywords = ["audio","video","volume","cli"]
+rust-version = "1.77"
+description = "Increase/decrease the volume of audio & video files with a simple CLI command."
+homepage = "https://github.com/ooojustin/audiyo"
+repository = "https://github.com/ooojustin/audiyo"
+license = "MIT"
 edition = "2021"
 
 [dependencies]
