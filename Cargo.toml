@@ -8,6 +8,7 @@ rust-version = "1.77"
 description = "Increase/decrease the volume of audio & video files with a simple CLI command."
 homepage = "https://github.com/ooojustin/audiyo"
 repository = "https://github.com/ooojustin/audiyo"
+readme = "README.md"
 license = "MIT"
 edition = "2021"
 
