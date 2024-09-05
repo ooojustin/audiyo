@@ -1,4 +1,8 @@
 use clap::{Arg, Command};
+use std::path::Path;
+
+mod audio;
+use audio::process_file;
 
 fn main() {
     let matches = Command::new("audiyo")
@@ -43,5 +47,14 @@ fn main() {
     let channels = *matches.get_one::<u32>("channels").unwrap();
     let bitrate = matches.get_one::<String>("bitrate").unwrap();
 
-    // TODO(justin): execute command
+    // ensure input file exists
+    if !Path::new(input).exists() {
+        eprintln!("Error: Input file '{}' not found.", input);
+        return;
+    }
+
+    // process the file using the specified arguments
+    if let Err(err) = process_file(input, output, volume, sample_rate, channels, bitrate) {
+        eprintln!("Error: {}", err);
+    }
 }

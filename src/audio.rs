@@ -42,12 +42,11 @@ pub fn process_file(
 
     if command.success() {
         println!(
-            "Video has been processed successfully.\nOutput saved to: {}",
+            "Audio/video has been processed successfully.\nOutput saved to: {}",
             output_path
         );
+        Ok(())
     } else {
-        println!("An error occurred while processing the video.");
+        Err(format!("An error occurred while processing the audio/video.").into())
     }
-
-    Ok(())
 }
