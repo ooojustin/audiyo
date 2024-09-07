@@ -1,8 +1,8 @@
 use clap::{Arg, Command};
 use std::path::Path;
 
-mod audio;
-use audio::process_file;
+mod ffmpeg;
+use ffmpeg::process_file;
 
 fn main() {
     let matches = Command::new("audiyo")

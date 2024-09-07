@@ -21,13 +21,13 @@ You can get started by using the `audiyo` command to adjust the volume of an aud
 For example, to decrease the volume by 10 dB, use:
 
 ```bash
-audiyo input.mp4 output.mp4 --volume "-10"
+audiyo input.mp4 output.mp4 --volume="-10"
 ```
 
 Or to increase the volume by 5 dB:
 
 ```bash
-audiyo input.mp4 output.mp4 --volume "5"
+audiyo input.mp4 output.mp4 --volume="5"
 ```
 
 ## Arguments
